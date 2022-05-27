@@ -1,18 +1,19 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Login from "./components/login/Login";
+import AlcoholTest from "./components/alcoholtest/AlcoholTest";
+import Header from "./components/alcoholtest/Header/Header";
 import Home from "./Home";
 
-function App() {
+function Router() {
 	return (
 		<BrowserRouter>
+			<Header />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
-				<Route exact path="/test" element={<Login />} />
+				<Route exact path="/alcohol" element={<AlcoholTest />} />
 			</Routes>
 		</BrowserRouter>
 	);
 }
 
-export default App;
+export default Router;

@@ -35,5 +35,6 @@ module.exports = {
 		"import/no-unresolved": 0,
 		"import/no-extraneous-dependencies": 0, // 테스트 또는 개발환경을 구성하는 파일에서는 devDependency 사용을 허용
 		"react/jsx-filename-extension": [2, { extensions: [".js", ".jsx"] }],
+		"no-plusplus": "off",
 	},
 };
